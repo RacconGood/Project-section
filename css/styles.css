@@ -1,0 +1,176 @@
+
+ul {
+  list-style: none;
+  list-style-type: none;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.vegetables{}
+.container{
+  width: 375px;
+}
+.vegetables-cont{
+  display: flex; 
+  flex-direction: column;
+  max-width: 100%;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #7a3145;
+  
+}
+.vegetables-title-cont{
+  margin-bottom: 40px;
+  
+}
+.vegetables-h{
+  /* font-family: "Inter Tight", sans-serif; */
+font-weight: 600;
+font-size: 48px;
+line-height: 1.04;
+letter-spacing: -0.01em;
+text-transform: uppercase;
+color: #fbfbfb;
+text-align: left;
+margin-bottom: 20px;
+}
+.vegetables-span{
+  color: rgba(251, 251, 251, 0.3);
+}
+.vegetables-text{
+  /* font-family: "Inter Tight", sans-serif; */
+font-weight: 500;
+font-size: 14px;
+line-height: 1.29;
+color: #fbfbfb;
+text-align: left;
+}
+.vegetables-list{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.vegetables-item{
+
+  border-radius: 40px;
+width: 334px;
+height: 379px;
+background-color: #fbfbfb;
+}
+ .vegetables-item:hover{
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+} 
+  .vegetables-link{
+
+}
+.vegetables-info{
+  padding-top: 32px;
+  padding-left: 26px;
+}
+.vegetables-name{
+  /* font-family: "Inter Tight", sans-serif; */
+font-weight: 600;
+font-size: 28px;
+line-height: 1;
+letter-spacing: -0.01em;
+color: #7a3145;
+margin-bottom: 12px;
+text-align: left;
+}
+.vegetables-price{
+  /* font-family: "Inter Tight", sans-serif; */
+font-weight: 600;
+font-size: 14px;
+line-height: 1.29;
+letter-spacing: -0.01em;
+text-transform: uppercase;
+color: #141414;
+text-align: left;
+margin-bottom: 14px;
+}
+.vegetables-img{
+  background-color: transparent;
+  width: 282px;
+height: 243px;
+}
+@media screen and (min-width: 768px){
+.container{
+  width: 768px
+}
+.vegetables-list {
+  display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+gap: 28px 20px; 
+}
+
+.vegetables-item {
+  width: calc((100% - 20px) / 2);
+}
+
+.vegetables-cont{
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding-bottom: 100px;
+  padding-top: 100px;;
+padding-left: 32px;
+padding-right: 32px;
+}
+.vegetables-h{
+  margin-bottom: 50px;
+}
+.vegetables-title-cont{
+  padding-right: 110px;
+}
+.vegetables-price{
+margin-bottom: 10px;
+}
+}
+@media screen and (min-width: 1280px){
+  .container{
+    width: 1280px;
+  }
+  .vegetables-cont{
+  padding-left: 100px;
+  padding-right: 100px;
+  }
+  .vegetables-h{
+    margin-bottom: 25px;
+  }
+  .vegetables-item {
+    width: calc((100% - 21px * 2) / 3);
+  }
+  .vegetables-title-cont{
+  padding-right: 454px;
+  margin-bottom: 50px;
+  }
+  .vegetables-list {
+  gap: 28px 21px; 
+  }
+}
